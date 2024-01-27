@@ -25,3 +25,11 @@ func _on_bar_pressed():
 
 func _on_improv_pressed():
 	pass # Replace with function body.
+
+
+func _on_club_pressed():
+	pass # Replace with function body.
+
+
+func _on_street_stage_pressed():
+	pass # Replace with function body.
