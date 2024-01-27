@@ -1,0 +1,31 @@
+join Roommate (Default) 2
+Roommate (Speaking): Hey, you look exhausted. Something happen at work?
+- I got fired. Life sucks. It’s not fair. I barely even made enough for rent.
+- I got fired for being too good at my job. Now I can’t pay rent.
+- Well, let’s put it this way: Nothing will ever happen at work ever again.
+join PC (Crying) 1
+Roommate (Default): That's rough buddy. What was your job again?
+- Dishwashing. Siiiiigh. Can’t believe I got fired from such a menial job. I must really be washed up now.
+- You point at your busted old dishwashing machine. That, but with slightly less dignity.
+- I was the rat that licks the restaurant’s plates clean. You’re welcome.
+Roommate (Laughing): Heh. Couldn't make it as a dishwasher, but maybe you could make it as a comedian.
+- What, really? You think I’m that good?
+	update PC (Speaking)
+	Roommate (Speaking): Well, I wouldn’t call that the best joke in the world, but it’s not a bad idea.
+- No, I’m really not funny.
+	update PC (Default)
+	Roommate (Speaking): Hey, don’t sell yourself short. It’s at least worth a shot.
+- Huh, sure, okay.
+	update PC (Speaking)
+	Roommate (Speaking): Yeah, I bet you can do this.
+Roommate (Speaking): I think the bar down the street, Whiskey Business, has an open mic night, uh… Every night? You could give it a try there, see how it goes.
+Roommate (Default): Or failing that, you could just drown your sorrows.
+- ...Well… It’s not like I have a better idea. Okay, sure. Let’s try it.
+	update PC (Speaking)
+- Yeah, that sounds great! I’m gonna do it!
+	update PC (Speaking)
+- I’m down to get drinks with you, but I won’t promise anything more.
+	update PC (Default)
+Roommate (Default): Alright! Well, I'll head down to the bar now, join the crowd. You probably need a bit to rest and think.
+Roommate (Speaking): And if you’re having trouble, keep an ear out, you might even get some inspiration from the audience!
+leave Roommate
