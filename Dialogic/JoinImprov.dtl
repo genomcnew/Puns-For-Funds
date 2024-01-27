@@ -1,0 +1,30 @@
+join ImprovTeacher (Default) 2
+join PC (Default) 1
+if {Entered.passImprov} == false:
+	ImprovTeacher (Speaking): Welcome! Are you here to join?
+	- Yeah
+		ImprovTeacher: Wonderful! How do you feel about a short demonstration?
+		- Perform!
+			if {Skills.General} == false:
+				ImprovTeacher (Laughing): That was excellent! You'll fit right in here!
+				ImprovTeacher (Speaking): Let's get started right away! We have lessons for $20, but advice is always free. Ah, and we have shows every day, whenever you feel ready!
+				jump Joined
+			else:
+				ImprovTeacher: Not bad, but you need a little more work on the basics before we can really teach you anything new. I recommend the bar down the street. Please, come back again!
+				[end_timeline]
+		- Actually, nevermind
+			ImprovTeacher: Cold feet, huh? I used to be like that too. Well, if you decide to come back, you'll always be welcome.
+			[end_timeline]
+	- Nah
+		ImprovTeacher: Ah, well that's alright. If you change your mind, we're always here!
+		[end_timeline]
+else:
+	ImprovTeacher: Welcome back!
+	label Joined
+	So, what do you want to do?
+	- Advice
+		ImprovTeacher: Advice? Alright, let's talk.
+	- Lesson [if {Money} < 20]
+		ImprovTeacher: Ah, a lesson! Excellent! Come, we're just about to get started.
+	- Show
+		ImprovTeacher: Wonderful! Let's get this show on the road!

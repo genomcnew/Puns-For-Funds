@@ -1,0 +1,17 @@
+join BarManager (Default) 2
+join PC (Default) 1
+BarManager: What can I do ya for?
+- Are you who I talk to about registering?
+	BarManager (Speaking): Yeah, that'd be me.
+- I'd like to join the open mic night, please.
+	BarManager (Speaking): Alright I can do that for ya.
+- Hey, how do I sign up to humiliate myself onstage?
+	BarManager (Laughing): I guess you'd talk to me.
+BarManager (Default): What's your act, kid?
+- Comedy.
+	BarManager (Speaking): Is that right! We could use some levity these days.
+- "Comedy."
+	BarManager (Laughing): Well we get plenty of "comedy." I was hoping you'd be more in the mood for comedy.
+- Comedy?
+	BarManager (Laughing): You don't sound so confident. I hope you don't have stage fright.
+BarManager (Default): Alright! I'll put you on the list, and I'll find you when it's your time.
