@@ -1,0 +1,23 @@
+join Boss (Angry) 2
+Boss (Angry): Get in here kid!
+- Yeah Boss?
+- What Do You Want?
+- ...
+
+join PC (Default) 1
+Boss (Angry): I want you out! You're fired!
+- What? But-
+- Finally
+- ...
+Boss (Angry): Go on! Get Out!
+- But why are you firing me? I just wash the dishes! I haven't even broken any!
+- Is there any specific reason?
+- ...
+Boss (Angry): You take all day to wash a single plate! You're useless!
+- Oh Ok. That makes sense.
+- And they're the cleanest damn plates you've ever seen!
+- ...
+Boss (Angry): Now take your sponge and get out!
+
+[end_timeline]
+
