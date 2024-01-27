@@ -36,7 +36,7 @@ directories/dtl_directory={
 "timeline": "res://Dialogic/timeline.dtl"
 }
 variables={}
-layout/style_list=[""]
+layout/style_list=[]
 layout/default_style=""
 glossary/default_case_sensitive=true
 text/letter_speed=0.01
@@ -59,6 +59,11 @@ animations/join_default="res://addons/dialogic/Modules/Character/DefaultAnimatio
 animations/leave_default="res://addons/dialogic/Modules/Character/DefaultAnimations/instant_in_or_out.gd"
 choices/def_false_behaviour=1
 choices/hotkey_behaviour=1
+
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="ignore"
 
 [editor_plugins]
 
