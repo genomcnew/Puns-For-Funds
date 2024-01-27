@@ -33,11 +33,12 @@ directories/dch_directory={
 "StreetPerformer": "res://Dialogic/StreetPerformer.dch"
 }
 directories/dtl_directory={
+"ItBegins": "res://ItBegins.dtl",
 "timeline": "res://Dialogic/timeline.dtl"
 }
 variables={}
-layout/style_list=[""]
-layout/default_style=""
+layout/style_list=["res://action.tres"]
+layout/default_style="res://action.tres"
 glossary/default_case_sensitive=true
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
