@@ -1,0 +1,90 @@
+[gd_scene load_steps=15 format=3 uid="uid://bhrh72c2uuany"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_80708"]
+[ext_resource type="Texture2D" uid="uid://bwfm07abhc0em" path="res://Assets/City2/Bright/back.png" id="2_t54i3"]
+[ext_resource type="Texture2D" uid="uid://bpwat31vj58lp" path="res://Assets/Buildings/ShittyHouse.png" id="3_6hsbg"]
+[ext_resource type="Texture2D" uid="uid://su3nn3uj2f3u" path="res://Assets/Buildings/ShittyHouseHighlight.png" id="4_ik7bs"]
+[ext_resource type="Texture2D" uid="uid://dd2nx664xapbx" path="res://Assets/Buildings/Bar.png" id="5_km164"]
+[ext_resource type="Texture2D" uid="uid://dufkldo227pv5" path="res://Assets/Buildings/BarHighlight.png" id="6_wx6gn"]
+[ext_resource type="Texture2D" uid="uid://c6bwot0ujrqit" path="res://Assets/Buildings/Improv.png" id="7_bvarh"]
+[ext_resource type="Texture2D" uid="uid://236vdr6vwbdd" path="res://Assets/Buildings/Improv-highlighted.png" id="8_4jfln"]
+[ext_resource type="Texture2D" uid="uid://d02c6t3lh1yd2" path="res://Assets/Buildings/ComedyClub.png" id="9_4hm68"]
+[ext_resource type="Texture2D" uid="uid://bxhsta35bovus" path="res://Assets/Buildings/ComedyClubHighlighted.png" id="10_3alvk"]
+[ext_resource type="Texture2D" uid="uid://b6mq2ep0y7icu" path="res://Assets/Buildings/StreetStage.png" id="11_j1v5s"]
+[ext_resource type="Texture2D" uid="uid://bh7vcjhrai2yn" path="res://Assets/Buildings/StreetStagHighlightede.png" id="12_8xwbd"]
+[ext_resource type="Texture2D" uid="uid://s48e3l7obgv2" path="res://Assets/City2/Bright/road&lamps.png" id="13_phvr1"]
+[ext_resource type="Texture2D" uid="uid://cp2khvgajtjdt" path="res://Assets/City2/Bright/road&lamps2.png" id="14_wpiab"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_80708")
+
+[node name="Back" type="Sprite2D" parent="."]
+position = Vector2(708, 343)
+scale = Vector2(0.760156, 0.698148)
+texture = ExtResource("2_t54i3")
+
+[node name="House" type="TextureButton" parent="."]
+offset_left = 31.0
+offset_top = 232.0
+offset_right = 231.0
+offset_bottom = 474.0
+texture_normal = ExtResource("3_6hsbg")
+texture_hover = ExtResource("4_ik7bs")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Bar" type="TextureButton" parent="."]
+offset_left = 249.0
+offset_top = 229.0
+offset_right = 456.0
+offset_bottom = 470.0
+texture_normal = ExtResource("5_km164")
+texture_hover = ExtResource("6_wx6gn")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Improv" type="TextureButton" parent="."]
+offset_left = 479.0
+offset_top = 244.0
+offset_right = 838.0
+offset_bottom = 464.0
+texture_normal = ExtResource("7_bvarh")
+texture_hover = ExtResource("8_4jfln")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Club" type="TextureButton" parent="."]
+offset_left = 862.0
+offset_top = 161.0
+offset_right = 1236.0
+offset_bottom = 468.0
+texture_normal = ExtResource("9_4hm68")
+texture_hover = ExtResource("10_3alvk")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="StreetStage" type="TextureButton" parent="."]
+offset_left = 763.0
+offset_top = 455.0
+offset_right = 931.0
+offset_bottom = 506.0
+texture_normal = ExtResource("11_j1v5s")
+texture_hover = ExtResource("12_8xwbd")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Road&lamps" type="Sprite2D" parent="."]
+position = Vector2(344, 243)
+scale = Vector2(0.377083, 0.75)
+texture = ExtResource("13_phvr1")
+
+[node name="Road&lamps2" type="Sprite2D" parent="."]
+position = Vector2(1070, 243)
+scale = Vector2(0.377083, 0.75)
+texture = ExtResource("14_wpiab")
+
+[connection signal="pressed" from="House" to="." method="_on_house_button_pressed"]
+[connection signal="pressed" from="Bar" to="." method="_on_bar_pressed"]
+[connection signal="pressed" from="Improv" to="." method="_on_improv_pressed"]
+[connection signal="pressed" from="Club" to="." method="_on_club_pressed"]
+[connection signal="pressed" from="StreetStage" to="." method="_on_street_stage_pressed"]

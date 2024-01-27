@@ -13,5 +13,23 @@ func _process(delta):
 
 
 func _on_house_button_pressed():
-	Dialogic.start("timeline")
+	#Dialogic.start("timeline")
+	#change scene in house
+	pass # Replace with function body.
+
+
+func _on_bar_pressed():
+	#change scene to bar
+	pass # Replace with function body.
+
+
+func _on_improv_pressed():
+	pass # Replace with function body.
+
+
+func _on_club_pressed():
+	pass # Replace with function body.
+
+
+func _on_street_stage_pressed():
 	pass # Replace with function body.

@@ -11,12 +11,13 @@ config_version=5
 [application]
 
 config/name="PunsForFunds"
-run/main_scene="res://node_2d.tscn"
+run/main_scene="res://Scenes/Street.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
+Global="*res://Scripts/Global.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
@@ -36,7 +37,16 @@ directories/dtl_directory={
 "ItBegins": "res://Dialogic/ItBegins.dtl",
 "timeline": "res://Dialogic/timeline.dtl"
 }
-variables={}
+variables={
+"Money": 100,
+"Popularity": 0,
+"Skills": {
+"General": 0,
+"Improv": 0,
+"Observational": 0,
+"Physical": 0
+}
+}
 layout/style_list=["res://action.tres"]
 layout/default_style="res://action.tres"
 glossary/default_case_sensitive=true
@@ -60,6 +70,11 @@ animations/join_default="res://addons/dialogic/Modules/Character/DefaultAnimatio
 animations/leave_default="res://addons/dialogic/Modules/Character/DefaultAnimations/instant_in_or_out.gd"
 choices/def_false_behaviour=1
 choices/hotkey_behaviour=1
+
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="ignore"
 
 [editor_plugins]
 
