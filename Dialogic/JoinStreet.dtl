@@ -1,1 +1,27 @@
-join StreetPerformer 1
+join StreetPerformer (Mime) 2
+join PC (Default) 1
+if {Entered.passStreet} == false:
+	StreetPerformer: (You approach the neighborhood mime. They appear to be stuck in a box.)
+	- (Open the box.)
+		StreetPerformer: (The mime climbs out of the box and bows to you)
+		- Can you teach me how to mime?
+			(The mime cocks their head at you and considers you for a moment. Finally, they nod their head and allow you to share the stage with them.)
+		- (Mime your request for help.)
+			StreetPerformer: (The mime nods and invites you to share the stage with them.)
+		- (Bow back and continue on your way.)
+			(The mime waves as you turn to leave, only for an invisible lasso to catch their hand and pull them back into the box.)
+			[end_timeline]
+		if {Skills.Improv} < 3:
+			StreetPerformer: (You do your best to follow the miming, but it's hard to follow some of the more unusual shapes. Maybe you'd do better with a little more "yes, and.")
+			[end_timeline]
+		else:
+			StreetPerformer: (It's not easy, but you're able to work with the mime through the whole set. At the end, they shake your hand. You're pretty sure you're welcome back any time. Might be some good money and publicity here.)
+			set {Entered.passStreet} = true
+			jump 
+	- (Leave them there.)
+		[end_timeline]
+else:
+	label streetPerformance
+	StreetPerformer: (Would you like to join the neighborhood mime?)
+	- (Mime your request for guidance)
+	- (Mime your request to join the show)

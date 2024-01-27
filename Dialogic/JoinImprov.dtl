@@ -8,6 +8,7 @@ if {Entered.passImprov} == false:
 			if {Skills.General} == false:
 				ImprovTeacher (Laughing): That was excellent! You'll fit right in here!
 				ImprovTeacher (Speaking): Let's get started right away! We have lessons for $20, but advice is always free. Ah, and we have shows every day, whenever you feel ready!
+				set {Entered.passImprov} = true
 				jump Joined
 			else:
 				ImprovTeacher: Not bad, but you need a little more work on the basics before we can really teach you anything new. I recommend the bar down the street. Please, come back again!
@@ -24,7 +25,7 @@ else:
 	So, what do you want to do?
 	- Advice
 		ImprovTeacher: Advice? Alright, let's talk.
-	- Lesson [if {Money} < 20]
+	- Lesson [if {Money} >= 20][else="disable"]
 		ImprovTeacher: Ah, a lesson! Excellent! Come, we're just about to get started.
 	- Show
 		ImprovTeacher: Wonderful! Let's get this show on the road!

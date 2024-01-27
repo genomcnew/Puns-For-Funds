@@ -15,3 +15,4 @@ BarManager (Default): What's your act, kid?
 - Comedy?
 	BarManager (Laughing): You don't sound so confident. I hope you don't have stage fright.
 BarManager (Default): Alright! I'll put you on the list, and I'll find you when it's your time.
+set {Entered.passBar} = true
