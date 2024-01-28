@@ -20,16 +20,16 @@ func _on_house_button_pressed():
 
 func _on_bar_pressed():
 	#change scene to bar
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Scenes/Bar.tscn")
 
 
 func _on_improv_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Scenes/Improv.tscn")
 
 
 func _on_club_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Scenes/Club.tscn")
 
 
 func _on_street_stage_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Scenes/StreetPerformer.tscn")
