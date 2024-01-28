@@ -58,6 +58,15 @@ offset_bottom = 354.0
 scale = Vector2(1.4245, 1.79911)
 text = "Make 'em Laugh!"
 
+[node name="Credits" type="Button" parent="."]
+layout_mode = 0
+offset_left = 595.0
+offset_top = 423.0
+offset_right = 951.0
+offset_bottom = 475.0
+scale = Vector2(1.4245, 1.79911)
+text = "Credits"
+
 [node name="CanvasGroup" type="CanvasGroup" parent="."]
 position = Vector2(-208, -452)
 scale = Vector2(2, 2)
@@ -79,3 +88,4 @@ scale = Vector2(3, 3)
 texture = ExtResource("5_jt0yi")
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Credits" to="." method="_on_credits_pressed"]

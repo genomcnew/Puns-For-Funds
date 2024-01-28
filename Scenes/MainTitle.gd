@@ -14,3 +14,7 @@ func _process(delta):
 func _on_start_pressed():
 	get_tree().change_scene_to_file("res://Scenes/Fired.tscn")
 	pass # Replace with function body.
+
+
+func _on_credits_pressed():
+	pass # Replace with function body.

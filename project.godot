@@ -34,7 +34,15 @@ directories/dch_directory={
 "StreetPerformer": "res://Dialogic/StreetPerformer.dch"
 }
 directories/dtl_directory={
+"BarSet": "res://Dialogic/BarSet.dtl",
+"ClubSet": "res://Dialogic/ClubSet.dtl",
+"ImprovSet": "res://Dialogic/ImprovSet.dtl",
 "ItBegins": "res://Dialogic/ItBegins.dtl",
+"JoinBar": "res://Dialogic/JoinBar.dtl",
+"JoinClub": "res://Dialogic/JoinClub.dtl",
+"JoinImprov": "res://Dialogic/JoinImprov.dtl",
+"JoinStreet": "res://Dialogic/JoinStreet.dtl",
+"StreetSet": "res://Dialogic/StreetSet.dtl",
 "timeline": "res://Dialogic/timeline.dtl"
 }
 variables={
