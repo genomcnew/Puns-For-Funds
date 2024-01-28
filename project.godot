@@ -47,6 +47,7 @@ directories/dtl_directory={
 }
 variables={
 "Entered": {
+"passBar": false,
 "passClub": false,
 "passImprov": false,
 "passStreet": false
