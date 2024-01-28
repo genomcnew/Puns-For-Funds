@@ -17,16 +17,16 @@
 "portraits": {
 "Default": {
 "export_overrides": {
-"image": ""
+"image": "\"res://Assets/CharacterPics/ImprovTeacher/Old_man.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.0,
 "scene": ""
 },
 "Laughing": {
 "export_overrides": {
-"image": ""
+"image": "\"res://Assets/CharacterPics/ImprovTeacher/Old_man_laughing.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -35,7 +35,7 @@
 },
 "Speaking": {
 "export_overrides": {
-"image": ""
+"image": "\"res://Assets/CharacterPics/ImprovTeacher/Old_man_talking.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

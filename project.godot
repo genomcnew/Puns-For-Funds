@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="PunsForFunds"
-run/main_scene="res://Scenes/Street.tscn"
+run/main_scene="res://Scenes/MainTitle.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -38,6 +38,11 @@ directories/dtl_directory={
 "timeline": "res://Dialogic/timeline.dtl"
 }
 variables={
+"Entered": {
+"passClub": false,
+"passImprov": false,
+"passStreet": false
+},
 "Money": 100,
 "Popularity": 0,
 "Skills": {

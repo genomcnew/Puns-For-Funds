@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://do8k0r710sld0"]
+
+[ext_resource type="Script" path="res://Scripts/it_begins.gd" id="1_g1r7t"]
+
+[node name="ItBegins" type="Node2D"]
+script = ExtResource("1_g1r7t")
+
+[node name="Later" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Later"]
+custom_minimum_size = Vector2(1152, 600)
+offset_right = 1152.0
+offset_bottom = 646.0
+color = Color(0.00392157, 0.00392157, 0.00392157, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Later"]
+custom_minimum_size = Vector2(1152, 600)
+offset_right = 1152.0
+offset_bottom = 600.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 72
+text = "Later That Evening..."
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.5
+one_shot = true
+autostart = true
+
+[node name="Background" type="Node2D" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

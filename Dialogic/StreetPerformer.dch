@@ -35,7 +35,7 @@
 },
 "Mime": {
 "export_overrides": {
-"image": ""
+"image": "\"res://Assets/CharacterPics/mime.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

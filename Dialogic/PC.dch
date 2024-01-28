@@ -17,38 +17,38 @@
 "portraits": {
 "Crying": {
 "export_overrides": {
-"image": ""
+"image": "\"res://Assets/CharacterPics/PC/Main_Charachter_Crying.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
+"offset": Vector2(-200, 0),
 "scale": 1.0,
 "scene": ""
 },
 "Default": {
 "export_overrides": {
-"image": "\"res://Designer.png\""
+"image": "\"res://Assets/CharacterPics/PC/Main_Characht._Normal.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
+"offset": Vector2(-200, 0),
 "scale": 1,
 "scene": ""
 },
 "Laughing": {
 "export_overrides": {
-"image": ""
+"image": "\"res://Assets/CharacterPics/PC/Main_Charachter_Laughing.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(-200, 0),
+"scale": 1.0,
 "scene": ""
 },
 "Speaking": {
 "export_overrides": {
-"image": ""
+"image": "\"res://Assets/CharacterPics/PC/Main_Charachter_Speaking.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(-200, 0),
+"scale": 1.0,
 "scene": ""
 }
 },

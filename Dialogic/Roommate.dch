@@ -17,29 +17,29 @@
 "portraits": {
 "Default": {
 "export_overrides": {
-"image": ""
+"image": "\"res://Assets/CharacterPics/Roommate/Roommate.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(375, 200),
+"scale": 1.5,
 "scene": ""
 },
 "Laughing": {
 "export_overrides": {
-"image": ""
+"image": "\"res://Assets/CharacterPics/Roommate/Roommate_Laughing.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(275, 200),
+"scale": 1.5,
 "scene": ""
 },
 "Speaking": {
 "export_overrides": {
-"image": ""
+"image": "\"res://Assets/CharacterPics/Roommate/Roommate_speaking.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
+"offset": Vector2(275, 200),
+"scale": 1.5,
 "scene": ""
 }
 },

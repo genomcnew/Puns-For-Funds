@@ -1,0 +1,81 @@
+[gd_scene load_steps=8 format=3 uid="uid://bf0p82aqbeonp"]
+
+[ext_resource type="Script" path="res://Scenes/MainTitle.gd" id="1_rgf5f"]
+[ext_resource type="Texture2D" uid="uid://b6mq2ep0y7icu" path="res://Assets/Buildings/StreetStage.png" id="2_64dhy"]
+[ext_resource type="FontFile" uid="uid://ccjrou3r80q8i" path="res://Assets/Fonts/BubblegumSans-Regular.ttf" id="2_cltgt"]
+[ext_resource type="Texture2D" uid="uid://ciygvg8iv2ipv" path="res://Assets/CharacterPics/PC/Main_Characht._Normal.png" id="3_iti05"]
+[ext_resource type="Texture2D" uid="uid://4pwbmutxdp5f" path="res://Assets/CharacterPics/PC/Main_Charachter_Speaking.png" id="4_a7goc"]
+[ext_resource type="Texture2D" uid="uid://nfk3neaq0112" path="res://Assets/Buildings/Microphone.png" id="5_jt0yi"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vxi64"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_iti05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_a7goc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rgf5f")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = -7.0
+offset_right = 1155.0
+offset_bottom = 593.0
+color = Color(0.203322, 0.203322, 0.203322, 1)
+
+[node name="Label" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 76.0
+offset_right = 915.0
+offset_bottom = 179.0
+theme_override_fonts/normal_font = ExtResource("2_cltgt")
+theme_override_font_sizes/normal_font_size = 72
+bbcode_enabled = true
+text = "PUNS FOR FUND$"
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 0
+offset_left = 591.0
+offset_top = 302.0
+offset_right = 947.0
+offset_bottom = 354.0
+scale = Vector2(1.4245, 1.79911)
+text = "Make 'em Laugh!"
+
+[node name="CanvasGroup" type="CanvasGroup" parent="."]
+position = Vector2(-208, -452)
+scale = Vector2(2, 2)
+
+[node name="StreetStage" type="Sprite2D" parent="CanvasGroup"]
+position = Vector2(259, 461)
+scale = Vector2(2.35, 1.98)
+texture = ExtResource("2_64dhy")
+
+[node name="MainCharachterSpeaking" type="AnimatedSprite2D" parent="CanvasGroup"]
+position = Vector2(212, 383)
+sprite_frames = SubResource("SpriteFrames_vxi64")
+autoplay = "default"
+frame_progress = 0.11802
+
+[node name="Microphone" type="Sprite2D" parent="CanvasGroup"]
+position = Vector2(288, 405)
+scale = Vector2(3, 3)
+texture = ExtResource("5_jt0yi")
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]

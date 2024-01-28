@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bhrh72c2uuany"]
+[gd_scene load_steps=16 format=3 uid="uid://bhrh72c2uuany"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_80708"]
 [ext_resource type="Texture2D" uid="uid://bwfm07abhc0em" path="res://Assets/City2/Bright/back.png" id="2_t54i3"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://d02c6t3lh1yd2" path="res://Assets/Buildings/ComedyClub.png" id="9_4hm68"]
 [ext_resource type="Texture2D" uid="uid://bxhsta35bovus" path="res://Assets/Buildings/ComedyClubHighlighted.png" id="10_3alvk"]
 [ext_resource type="Texture2D" uid="uid://b6mq2ep0y7icu" path="res://Assets/Buildings/StreetStage.png" id="11_j1v5s"]
+[ext_resource type="Texture2D" uid="uid://bqpoy1qkitu38" path="res://Assets/CharacterPics/mime.png" id="11_ss1wh"]
 [ext_resource type="Texture2D" uid="uid://bh7vcjhrai2yn" path="res://Assets/Buildings/StreetStagHighlightede.png" id="12_8xwbd"]
 [ext_resource type="Texture2D" uid="uid://s48e3l7obgv2" path="res://Assets/City2/Bright/road&lamps.png" id="13_phvr1"]
 [ext_resource type="Texture2D" uid="uid://cp2khvgajtjdt" path="res://Assets/City2/Bright/road&lamps2.png" id="14_wpiab"]
@@ -63,6 +64,10 @@ texture_hover = ExtResource("10_3alvk")
 ignore_texture_size = true
 stretch_mode = 0
 
+[node name="Mime" type="Sprite2D" parent="."]
+position = Vector2(855, 413)
+texture = ExtResource("11_ss1wh")
+
 [node name="StreetStage" type="TextureButton" parent="."]
 offset_left = 763.0
 offset_top = 455.0
@@ -82,6 +87,20 @@ texture = ExtResource("13_phvr1")
 position = Vector2(1070, 243)
 scale = Vector2(0.377083, 0.75)
 texture = ExtResource("14_wpiab")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 958.0
+offset_top = 190.0
+offset_right = 1083.0
+offset_bottom = 219.0
+rotation = 0.268618
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 25
+text = "Some Guy"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="House" to="." method="_on_house_button_pressed"]
 [connection signal="pressed" from="Bar" to="." method="_on_bar_pressed"]
