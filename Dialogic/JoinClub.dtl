@@ -1,0 +1,58 @@
+join ClubManager (Default) 2
+join PC (Default) 1
+if {Entered.passClub} == false:
+	ClubManager: What is it, kid? I'm busy.
+	- I want to do comedy. As a job.
+		ClubManager (Speaking): Sure, ok. Don't expect to get rich, though. That takes more luck than skill. How about you show me what you can do?
+		- Alright, let's do this.
+			jump SkillCheck
+		- Actually, I'm not sure I'm ready.
+			ClubManager: Don't waste my time.
+			[end_timeline]
+	- I want you to pay me to make people laugh.
+		ClubManager: Is that right? Well you're not doing a good job so far. You better have more than that if you want me to give you a slot.
+		- I certainly do! (Show him.)
+			jump SkillCheck
+		- Well now I don't want to.
+			ClubManager: Then don't waste my time.
+			[end_timeline]
+	- Uhhh... never mind.
+		ClubManager (Angry): Don't waste my time.
+		[end_timeline]
+else:
+	ClubManager: Are you ready to get on stage?
+	- Yes!
+		ClubManager: Perfect. Let's get started.
+		jump ClubSet/
+	- No.
+		ClubManager: Then come back when you're ready.
+		[end_timeline]
+[end_timeline]
+label SkillCheck
+if {Skills.General} >= 7:
+	if {Skills.Observational} >= 5:
+		if {Skills.Improv} >= 4:
+			if {Skills.Physical} >= 3:
+				ClubManager: Alright. You just might have something. I'll give you a slot, and if you bring in good numbers, maybe I'll hire you full time.
+				ClubManager: Can you start tonight?
+				- Yeah!
+					ClubManager: Perfect. Let's get started.
+					jump ClubSet/
+				- Not yet.
+					ClubManager: That's a shame. Come back when you're ready.
+					[end_timeline]
+			else:
+				ClubManager: YOur material's good, but your mannerisms are all wrong. No one's gonna know how you feel if you don't show them, and no one's gonna see that from the back row if you're moving like that.
+				ClubManager: Hell, that mime out there is better than you right now. Maybe watch some of their work, take some notes. Then come back and I'll give you a shot.
+				[end_timeline]
+		else:
+			ClubManager: You're not terrible, but you're a bit too wooden. Loosen up, or when someone heckles ya, you're gonna break. You gotta be able to roll with the punches.
+			ClubManager: Try an improv class. It might do you some good.
+			[end_timeline]
+	else:
+		ClubManager: You've got decent delivery, but the content of your jokes is weak. You have nothing to say. Observational comedy isn't everything, but if you're ignorant of things happening in the world, you're gonna turn the audience against you.
+		ClubManager: Get some more practice on stage. Read a newspaper. I don't know, just don't come back until you've got something to say.
+		[end_timeline]
+else:
+	ClubManager: Why are you even here? You can barely even structure a joke. Go back to open mic night if you're just gonna humiliate yourself, kid. At least they're drunk enough to enjoy it.
+	[end_timeline]
