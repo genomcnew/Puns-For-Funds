@@ -1,5 +1,7 @@
 join BarManager (Default) 2
 join PC (Default) 1
+if {Entered.passBar} == false:
+	jump Returning
 BarManager: What can I do ya for?
 - Are you who I talk to about registering?
 	BarManager (Speaking): Yeah, that'd be me.
@@ -16,3 +18,15 @@ BarManager (Default): What's your act, kid?
 	BarManager (Laughing): You don't sound so confident. I hope you don't have stage fright.
 BarManager (Default): Alright! I'll put you on the list, and I'll find you when it's your time.
 set {Entered.passBar} = true
+jump BarSet/
+[end_timeline]
+label Returning
+BarManager: Welcome back, anything I can do for you?
+- Just want a drink and some company.
+	BarManager: Well you've come to the right place!
+- I want to get on stage.
+	BarManager: I thought you might. You'll be on after the next few people. Break a leg.
+	jump BarSet/
+- Nevermind, actually.
+	BarManager: That's alright, I'll see you around then!
+	[end_timeline]

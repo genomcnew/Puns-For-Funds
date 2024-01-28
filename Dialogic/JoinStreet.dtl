@@ -25,3 +25,4 @@ else:
 	StreetPerformer: (Would you like to join the neighborhood mime?)
 	- (Mime your request for guidance)
 	- (Mime your request to join the show)
+		jump StreetSet/

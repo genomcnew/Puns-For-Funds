@@ -29,3 +29,4 @@ else:
 		ImprovTeacher: Ah, a lesson! Excellent! Come, we're just about to get started.
 	- Show
 		ImprovTeacher: Wonderful! Let's get this show on the road!
+		jump ImprovSet/
