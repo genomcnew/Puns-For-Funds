@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="PunsForFunds"
-run/main_scene="res://Scenes/Street.tscn"
+run/main_scene="res://Scenes/MainTitle.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -34,10 +34,23 @@ directories/dch_directory={
 "StreetPerformer": "res://Dialogic/StreetPerformer.dch"
 }
 directories/dtl_directory={
+"BarSet": "res://Dialogic/BarSet.dtl",
+"ClubSet": "res://Dialogic/ClubSet.dtl",
+"ImprovSet": "res://Dialogic/ImprovSet.dtl",
 "ItBegins": "res://Dialogic/ItBegins.dtl",
+"JoinBar": "res://Dialogic/JoinBar.dtl",
+"JoinClub": "res://Dialogic/JoinClub.dtl",
+"JoinImprov": "res://Dialogic/JoinImprov.dtl",
+"JoinStreet": "res://Dialogic/JoinStreet.dtl",
+"StreetSet": "res://Dialogic/StreetSet.dtl",
 "timeline": "res://Dialogic/timeline.dtl"
 }
 variables={
+"Entered": {
+"passClub": false,
+"passImprov": false,
+"passStreet": false
+},
 "Money": 100,
 "Popularity": 0,
 "Skills": {
